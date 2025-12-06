@@ -1,0 +1,29 @@
+{
+	"main": "dist/_worker.js/index.js",
+	"name": "my-ratelimit-astro-app",
+  "compatibility_date": "2025-12-06",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
+	"assets": {
+		"binding": "ASSETS",
+		"directory": "./dist"
+	},
+	"observability": {
+    "enabled": true
+  },
+  "unsafe": {
+    "bindings": [
+      {
+        "name": "MY_RATE_LIMITER",
+        "type": "ratelimit",
+        "namespace_id": 1001,
+        "simple": {
+            "limit": 2,
+            "period": 60
+        }
+      }
+    ]
+  }
+}

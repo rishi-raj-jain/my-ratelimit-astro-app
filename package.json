@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "name": "my-ratelimit-astro-app",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^12.6.12",
+    "astro": "^5.16.4",
+    "wrangler": "^4.53.0"
+  }
+}
